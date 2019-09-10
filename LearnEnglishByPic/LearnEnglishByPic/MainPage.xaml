@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:LearnEnglishByPic"
+             x:Class="LearnEnglishByPic.MainPage">
+
+    <StackLayout>
+        <Grid  x:Name="SelectGrid"  RowSpacing="1" ColumnSpacing="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Button Clicked="SelectOne" Text = "1" Grid.Row="1" Grid.Column="0"
+         />
+            <Button Text = "2" Grid.Row="1" Grid.Column="1"
+         />
+            <Button Text = "3" Grid.Row="1" Grid.Column="2"
+         />
+            <Button Text = "4" Grid.Row="1" Grid.Column="3"
+         />
+            <Button Text = "5" Grid.Row="2" Grid.Column="0"
+        />
+            <Button Text = "6" Grid.Row="2" Grid.Column="1"
+         />
+            <Button Text = "7" Grid.Row="2" Grid.Column="2"
+         />
+            <Button Text = "8" Grid.Row="2" Grid.Column="3"
+         />
+            <Button Text = "9" Grid.Row="3" Grid.Column="0"
+         />
+            <Button Text = "10" Grid.Row="3" Grid.Column="1"
+         />
+            <Button Text = "11" Grid.Row="3" Grid.Column="2"
+         />
+            <Button Text = "12" Grid.Row="3" Grid.Column="3"
+         />
+            <Button Text = "13" Grid.Row="4" Grid.Column="0"
+        />
+            <Button Text = "14" Grid.Row="4" Grid.Column="1"
+         />
+            <Button Text = "15" Grid.Row="4" Grid.Column="2"
+        />
+            <Button Text = "16" Grid.Row="4" Grid.Column="3"
+         />
+            <Button Text = "17" Grid.Row="5" Grid.Column="0" />
+            <Button Text = "18" Grid.Row="5" Grid.Column="1" />
+
+            <Button Text = "19" Grid.Row="5" Grid.Column="2"
+       />
+            <Button Text = "20" Grid.Row="5" Grid.Column="3"
+        />
+        </Grid>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Grid x:Name="ExamGrid" IsVisible="False"  >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <ImageButton Clicked="OnItemSelected"  x:Name="ImgBtnOne" Source="a1.jpg" Grid.Row="0" Grid.Column="0"></ImageButton>
+                <ImageButton Clicked="OnItemSelected" x:Name="ImgBtnTwo" Source="a2.jpg"    Grid.Row="0" Grid.Column="1"></ImageButton>
+                <ImageButton Clicked="OnItemSelected" x:Name="ImgBtnThree" Source="a3.jpg"  Grid.Row="1" Grid.Column="0"  ></ImageButton>
+                <ImageButton Clicked="OnItemSelected" x:Name="ImgBtnFour" Source="a4.jpg" Grid.Row="1" Grid.Column="1"  ></ImageButton>
+
+            </Grid>
+        </StackLayout>
+        <StackLayout
+            HorizontalOptions="Center"
+            VerticalOptions="Center">
+            <Image x:Name="ImagePreviwer" HeightRequest="250" Source="a1.jpg" IsVisible="False">
+                
+            </Image>
+            <Button Clicked="OnNextButton" x:Name="NextButton" IsVisible="False" Text="Next"></Button>
+            <Button Clicked="OnPrevioseButton" x:Name="PreviuseButton" IsVisible="False" Text="Previuse"></Button>
+
+
+        </StackLayout>
+    </StackLayout>
+
+
+</ContentPage>
